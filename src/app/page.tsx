@@ -176,11 +176,6 @@ export default function Home() {
               or simply want to communicate with more impact, our proven methodologies will help you 
               achieve your goals.
             </p>
-            <div className="flex justify-center">
-              <button className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white font-bold py-4 px-8 rounded-full transition duration-300 shadow-md transform hover:translate-y-[-2px]">
-                Start Your Journey
-              </button>
-            </div>
           </div>
         </section>
 
@@ -276,7 +271,7 @@ export default function Home() {
                 {/* Remove wave pattern inside card */}
                 
                 <div className="relative z-10">
-                  <div className="w-[500px] h-[200px] relative mx-auto mb-6">
+                  <div className="w-full max-w-[320px] sm:max-w-[500px] h-[150px] sm:h-[200px] relative mx-auto mb-6">
                     <Image 
                       src="/leadership-assessment.png" 
                       alt="Leadership Assessment" 
@@ -284,7 +279,7 @@ export default function Home() {
                       className="object-contain"
                     />
                   </div>
-                  <h3 className="text-3xl font-bold mb-6 text-center">Discover More About Your Leadership Style</h3>
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-center">Discover More About Your Leadership Style</h3>
                   <p className="text-xl mb-8 text-center text-blue-100">
                     Take our leadership assessment to learn more about your unique leadership style and 
                     how to leverage your strengths for maximum impact.
@@ -294,7 +289,7 @@ export default function Home() {
                       href="https://quiz.tryinteract.com/#/6801178311186a001585464d" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="inline-block bg-white text-indigo-900 hover:bg-blue-100 font-bold py-4 px-8 rounded-full transition duration-300 shadow-md transform hover:translate-y-[-2px]"
+                      className="inline-block bg-white text-indigo-900 hover:bg-blue-100 font-bold py-4 px-8 rounded-full transition duration-300 shadow-md transform hover:translate-y-[-2px] text-center w-full sm:w-auto"
                     >
                       Take Our Leadership Assessment →
                     </a>
