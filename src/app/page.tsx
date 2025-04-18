@@ -80,6 +80,15 @@ export default function Home() {
                     Training Handout
                   </Link>
                 </li>
+                <li>
+                  <Link 
+                    href="/audio" 
+                    className="block py-3 px-4 text-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Audio Training
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>
@@ -96,8 +105,8 @@ export default function Home() {
           </svg>
         </div>
         
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <div className="mx-auto w-[600px] h-[400px] md:w-[800px] md:h-[500px] relative">
+        <div className="container mx-auto px-4 sm:px-6 text-center relative z-10">
+          <div className="mx-auto w-full max-w-[600px] h-[300px] sm:h-[400px] md:w-[800px] md:h-[500px] relative">
             <Image 
               src="/hero-image.png" 
               alt="Executive Presence" 
@@ -106,7 +115,7 @@ export default function Home() {
               priority
             />
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-4 animate-fadeIn">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 animate-fadeIn">
             The Art of Building Executive Presence
           </h1>
           <h2 className="text-3xl md:text-4xl font-light text-blue-200 mb-8 animate-fadeIn">
@@ -134,7 +143,7 @@ export default function Home() {
           {/* Remove wave pattern overlay */}
           
           <div className="max-w-4xl mx-auto">
-            <div className="mb-12 mx-auto w-[640px] h-[320px] relative">
+            <div className="mb-12 mx-auto w-full max-w-[400px] sm:max-w-[640px] h-[250px] sm:h-[320px] relative">
               <Image 
                 src="/mission-image.png" 
                 alt="Our Mission" 
