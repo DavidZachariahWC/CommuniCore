@@ -1,17 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+
 import Link from "next/link";
+import NavigationBar from "@/components/NavigationBar";
 
 export default function AudioPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <nav className="bg-gray-900 text-white p-4 sticky top-0 z-10 shadow-md">
-        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0 px-4">
-          <Link href="/" className="text-xl font-bold">CommuniCore</Link>
-          <Link href="/" className="text-sm bg-blue-800 hover:bg-blue-700 px-4 py-2 rounded-full transition-colors">
-            ← Back to Home
-          </Link>
-        </div>
-      </nav>
+      <NavigationBar currentRoute="audio" />
       
       <main className="container mx-auto py-8 sm:py-12 px-4 sm:px-6 flex flex-col items-center">
         <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-6 sm:mb-8 px-2">Audio Training</h1>
