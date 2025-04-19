@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Art of Building Executive Presence by Commincore",
-  description: "Learn how to build executive presence with Commincore",
+  title: "The Art of Building Executive Presence by CommuniCore",
+  description: "Learn how to build executive presence with CommuniCore",
 };
 
 export default function RootLayout({

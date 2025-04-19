@@ -73,6 +73,15 @@ export default function Home() {
                 </li>
                 <li>
                   <Link 
+                    href="/assessment" 
+                    className="block py-3 px-4 text-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Assessment Tool
+                  </Link>
+                </li>
+                <li>
+                  <Link 
                     href="/handout" 
                     className="block py-3 px-4 text-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors"
                     onClick={() => setIsMenuOpen(false)}

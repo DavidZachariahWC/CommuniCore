@@ -2,10 +2,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 
-export default function InfographicPage() {
+export default function AssessmentToolPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   return (
@@ -72,7 +71,7 @@ export default function InfographicPage() {
                 <li>
                   <Link 
                     href="/infographic" 
-                    className="block py-3 px-4 text-lg text-gray-700 bg-blue-50 text-blue-600 rounded-lg"
+                    className="block py-3 px-4 text-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Infographic
@@ -81,7 +80,7 @@ export default function InfographicPage() {
                 <li>
                   <Link 
                     href="/assessment" 
-                    className="block py-3 px-4 text-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors"
+                    className="block py-3 px-4 text-lg text-gray-700 bg-blue-50 text-blue-600 rounded-lg"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Assessment Tool
@@ -112,27 +111,24 @@ export default function InfographicPage() {
       )}
       
       <main className="container mx-auto py-8 sm:py-12 px-4 sm:px-6 flex flex-col items-center">
-        <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-6 sm:mb-8 px-2">Executive Presence Infographic</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-6 sm:mb-8 px-2">Executive Presence Assessment Tool</h1>
         
         <div className="mb-8 flex justify-center">
           <a 
-            href="https://drive.google.com/file/d/1H6SgGnPGYDmklVFdE7rO6AaJ9zRI2w89/view"
+            href="https://drive.google.com/file/d/1mtG1J5BKjexRGOTtpf4CMyUiagGTMdkL/view"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors text-center w-full sm:w-auto max-w-xs"
           >
-            View Full Infographic
+            View Assessment Tool
           </a>
         </div>
         
-        <div className="relative w-full max-w-3xl mx-auto my-4">
-          <Image
-            src="/infographic.png"
-            alt="Executive Presence Infographic"
-            width={1000}
-            height={5000}
-            className="w-full h-auto"
-            priority
+        <div className="relative w-full max-w-5xl mx-auto my-4 border border-gray-200 rounded-lg overflow-hidden shadow-md">
+          <iframe 
+            src="/assessment.pdf" 
+            className="w-full h-[600px] sm:h-[800px]"
+            title="Executive Presence Assessment Tool"
           />
         </div>
       </main>
